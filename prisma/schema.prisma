@@ -1,0 +1,45 @@
+// This is your Prisma schema file
+// Learn more: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Contact {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  phone     String?
+  message   String
+  service   String?
+  status    String   @default("new")
+  createdAt DateTime @default(now())
+}
+
+model Booking {
+  id            String   @id @default(cuid())
+  name          String
+  email         String
+  phone         String
+  serviceType   String
+  preferredDate DateTime
+  message       String?
+  status        String   @default("pending")
+  createdAt     DateTime @default(now())
+}
+
+model GalleryImage {
+  id          String   @id @default(cuid())
+  title       String
+  description String?
+  imageUrl    String
+  category    String
+  order       Int      @default(0)
+  featured    Boolean  @default(false)
+  createdAt   DateTime @default(now())
+}
