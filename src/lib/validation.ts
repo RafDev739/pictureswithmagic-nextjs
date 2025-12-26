@@ -17,6 +17,9 @@ export const contactSchema = z.object({
       message: "Phone number must be at least 10 digits",
     }),
   service: z.string().optional(),
+  preferredContactMethod: z.enum(["email", "phone"]).optional(),
+  bestTimeToContact: z.string().optional(),
+  estimatedPhotos: z.string().optional(),
   message: z
     .string()
     .min(10, "Message must be at least 10 characters")

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import CTAButton from "@/components/ui/CTAButton";
 
 export const metadata: Metadata = {
   title: "Photo Galleries | Before & After Examples | Restoration & Organization",
@@ -118,12 +119,7 @@ export default function GalleriesPage() {
           <p className="text-xl text-neutral-600 mb-8 max-w-2xl mx-auto">
             Let us help you create beautiful results like these
           </p>
-          <Link
-            href="/contact"
-            className="inline-flex items-center justify-center px-8 py-3 bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors font-medium"
-          >
-            Get Started
-          </Link>
+          <CTAButton variant="primary" size="lg" />
         </div>
       </section>
     </div>

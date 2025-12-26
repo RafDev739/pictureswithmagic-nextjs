@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import CTAButton from "@/components/ui/CTAButton";
+import HeroSection from "@/components/sections/HeroSection";
+import HowItWorks from "@/components/sections/HowItWorks";
+import TestimonialsPreview from "@/components/sections/TestimonialsPreview";
+import TypicalProjects from "@/components/sections/TypicalProjects";
+import TrustFAQ from "@/components/sections/TrustFAQ";
 
 export const metadata: Metadata = {
   title: "Pictures With Magic | Photo Organization | Photo Restoration | Boca Raton, FL",
@@ -21,86 +27,8 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      {/* Hero Section with Circular Icons */}
-      <section className="relative py-16 md:py-24 overflow-hidden bg-gradient-to-br from-background-sky to-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Circular Icons Section */}
-          <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 mb-12 relative">
-            {/* Icon 1 - Scanning */}
-            <div className="flex flex-col items-center">
-              <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-white shadow-lg flex items-center justify-center mb-4 ring-4 ring-primary/10">
-                <svg className="w-16 h-16 md:w-20 md:h-20 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                </svg>
-              </div>
-            </div>
-
-            {/* Dotted connector line */}
-            <div className="hidden md:block w-24 lg:w-32 border-t-2 border-dashed border-accent/40 absolute top-16 md:top-20 left-1/3 transform -translate-x-12" />
-
-            {/* Icon 2 - Organization */}
-            <div className="flex flex-col items-center">
-              <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-white shadow-lg flex items-center justify-center mb-4 ring-4 ring-primary/10">
-                <svg className="w-16 h-16 md:w-20 md:h-20 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
-                </svg>
-              </div>
-            </div>
-
-            {/* Dotted connector line */}
-            <div className="hidden md:block w-24 lg:w-32 border-t-2 border-dashed border-accent/40 absolute top-16 md:top-20 right-1/3 transform translate-x-12" />
-
-            {/* Icon 3 - Albums */}
-            <div className="flex flex-col items-center">
-              <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-white shadow-lg flex items-center justify-center mb-4 ring-4 ring-primary/10">
-                <svg className="w-16 h-16 md:w-20 md:h-20 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                </svg>
-              </div>
-            </div>
-          </div>
-
-          {/* Main Title */}
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6 font-heading">
-              Pictures with Magic
-            </h1>
-            <p className="text-2xl md:text-3xl text-accent mb-4 italic">
-              Do you have a photo?...Then you have a memory...
-            </p>
-            <p className="text-xl md:text-2xl text-neutral-600 mb-8">
-              a whole world of stories to tell...
-            </p>
-
-            {/* May I help you? Section */}
-            <h2 className="text-2xl md:text-3xl font-bold text-primary mb-8">
-              May I help you?
-            </h2>
-
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <Link
-                href="/services"
-                className="inline-flex items-center justify-center px-8 py-3 bg-primary text-white rounded-lg hover:bg-primary-dark transition-all duration-200 font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
-              >
-                About Our Services
-              </Link>
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center px-8 py-3 bg-accent text-white rounded-lg hover:bg-accent-dark transition-all duration-200 font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 active:scale-95"
-              >
-                For a Free Consultation
-              </Link>
-            </div>
-
-            <Link
-              href="/galleries"
-              className="inline-flex items-center justify-center px-8 py-3 bg-secondary text-white rounded-lg hover:bg-secondary/90 transition-all duration-200 font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
-            >
-              Visit our Gallery
-            </Link>
-          </div>
-        </div>
-      </section>
+      {/* Hero Section */}
+      <HeroSection />
 
       {/* Don't let your memories slip away */}
       <section className="py-6 bg-primary/5 border-y border-primary/20">
@@ -114,7 +42,7 @@ export default function Home() {
       {/* Remember when... Section */}
       <section className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-12 text-center font-heading">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-12 text-center font-heading">
             Remember when....
           </h2>
 
@@ -129,16 +57,16 @@ export default function Home() {
             </div>
             <div className="relative aspect-square overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow">
               <Image
-                src="/images/11a4abd9a5d221f4.jpg"
-                alt="Nostalgic family memories - children playing at the beach"
+                src="/images/grandma-elvira-hd.png"
+                alt="Things I will never forget about Grandma Elvira"
                 fill
                 className="object-cover"
               />
             </div>
             <div className="relative aspect-square overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow">
               <Image
-                src="/images/4f051043e8e59706.jpg"
-                alt="Nostalgic family memories - precious moments with loved ones"
+                src="/images/anniversary-hd.png"
+                alt="Anniversary celebration - 63 years of love and memories"
                 fill
                 className="object-cover"
               />
@@ -157,20 +85,10 @@ export default function Home() {
             <h3 className="text-2xl md:text-3xl font-bold text-accent mb-6">
               We can help manage your photo collection
             </h3>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <p className="text-lg text-primary font-semibold">
-                Photo Organization & Photo Management services
-              </p>
-              <div className="flex gap-2 items-center">
-                <span className="text-lg text-neutral-600">For a Free Consultation</span>
-                <Link
-                  href="/contact"
-                  className="text-accent hover:text-accent-dark font-semibold underline"
-                >
-                  Contact US
-                </Link>
-              </div>
-            </div>
+            <p className="text-lg text-primary font-semibold mb-6">
+              Photo Organization & Photo Management services
+            </p>
+            <CTAButton variant="primary" size="md" />
           </div>
         </div>
       </section>
@@ -179,10 +97,10 @@ export default function Home() {
       <section className="py-16 md:py-24 bg-background-sky">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-4 font-heading">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 font-heading">
               Our Services
             </h2>
-            <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
+            <p className="text-xl md:text-2xl text-primary font-medium max-w-2xl mx-auto">
               Transform your precious memories into organized, preserved treasures
             </p>
           </div>
@@ -222,8 +140,8 @@ export default function Home() {
               <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all transform hover:-translate-y-1">
                 <div className="relative h-48 overflow-hidden">
                   <Image
-                    src="/images/4f051043e8e59706.jpg"
-                    alt="Photo organization service"
+                    src="/images/photo-organization-collage.jpg"
+                    alt="Photo organization service - Creative photo collages"
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-300"
                   />
@@ -278,14 +196,23 @@ export default function Home() {
         </div>
       </section>
 
+      {/* How It Works */}
+      <HowItWorks />
+
+      {/* Testimonials Preview */}
+      <TestimonialsPreview />
+
+      {/* Typical Projects */}
+      <TypicalProjects featuredOnly={true} />
+
       {/* Why Choose Us */}
       <section className="py-16 md:py-24 bg-background-sky">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-4 font-heading">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 font-heading">
               Why Choose Pictures With Magic?
             </h2>
-            <p className="text-lg text-neutral-600">
+            <p className="text-xl md:text-2xl text-primary font-medium">
               Professional service with a personal touch
             </p>
           </div>
@@ -300,7 +227,7 @@ export default function Home() {
                 </div>
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-neutral-900 mb-2">
+                <h3 className="text-lg font-semibold text-primary mb-2">
                   Professional Quality
                 </h3>
                 <p className="text-neutral-600">
@@ -318,7 +245,7 @@ export default function Home() {
                 </div>
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-neutral-900 mb-2">
+                <h3 className="text-lg font-semibold text-primary mb-2">
                   Safe & Secure
                 </h3>
                 <p className="text-neutral-600">
@@ -336,7 +263,7 @@ export default function Home() {
                 </div>
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-neutral-900 mb-2">
+                <h3 className="text-lg font-semibold text-primary mb-2">
                   Fast Turnaround
                 </h3>
                 <p className="text-neutral-600">
@@ -354,7 +281,7 @@ export default function Home() {
                 </div>
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-neutral-900 mb-2">
+                <h3 className="text-lg font-semibold text-primary mb-2">
                   Personal Service
                 </h3>
                 <p className="text-neutral-600">
@@ -366,6 +293,13 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Trust FAQ */}
+      <TrustFAQ
+        title="Questions? We've Got Answers"
+        description="Everything you need to know about preserving your precious memories"
+        limit={5}
+      />
+
       {/* CTA Section */}
       <section className="py-16 md:py-24 bg-primary text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -375,12 +309,7 @@ export default function Home() {
           <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
             Get started today with a free consultation
           </p>
-          <Link
-            href="/contact"
-            className="inline-flex items-center justify-center px-8 py-3 bg-accent text-white rounded-lg hover:bg-accent-light transition-all duration-200 font-medium shadow-lg hover:shadow-xl active:scale-95"
-          >
-            Contact Us Now
-          </Link>
+          <CTAButton variant="primary" size="lg" />
         </div>
       </section>
     </>

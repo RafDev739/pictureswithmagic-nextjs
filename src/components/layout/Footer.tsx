@@ -9,21 +9,35 @@ export default function Footer() {
     <footer className="bg-neutral-900 text-neutral-300">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Company Info */}
+          {/* Company Info & Service Area */}
           <div className="space-y-4">
             <h3 className="text-white text-lg font-semibold">
               {siteConfig.name}
             </h3>
-            <p className="text-sm">
-              {siteConfig.description}
+            <p className="text-sm italic text-neutral-400">
+              Preserving memories for generations
             </p>
-            <div className="flex space-x-4">
+
+            {/* Service Area */}
+            {siteConfig.serviceAreaConfig.localPickupDelivery && (
+              <div className="pt-2">
+                <p className="text-accent text-sm font-medium flex items-center gap-1.5">
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  Local pickup & delivery available
+                </p>
+              </div>
+            )}
+
+            {/* Social Media */}
+            <div className="flex space-x-4 pt-2">
               {siteConfig.links.facebook && (
                 <a
                   href={siteConfig.links.facebook}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-primary transition-colors"
+                  className="hover:text-accent transition-colors"
                   aria-label="Facebook"
                 >
                   <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -36,7 +50,7 @@ export default function Footer() {
                   href={siteConfig.links.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-primary transition-colors"
+                  className="hover:text-accent transition-colors"
                   aria-label="Instagram"
                 >
                   <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -66,17 +80,17 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Company */}
+          {/* Quick Links */}
           <div>
             <h4 className="text-white text-sm font-semibold mb-4 uppercase tracking-wider">
-              Company
+              Quick Links
             </h4>
             <ul className="space-y-2">
-              {footerNavigation.company.map((link) => (
+              {footerNavigation.quickLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm hover:text-primary transition-colors"
+                    className="text-sm hover:text-accent transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -85,22 +99,40 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Resources */}
+          {/* Connect */}
           <div>
             <h4 className="text-white text-sm font-semibold mb-4 uppercase tracking-wider">
-              Resources
+              Connect
             </h4>
-            <ul className="space-y-2">
-              {footerNavigation.resources.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-sm hover:text-primary transition-colors"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
+            <ul className="space-y-3">
+              <li>
+                <a
+                  href={`tel:${siteConfig.links.phone.replace(/[^0-9]/g, '')}`}
+                  className="text-sm hover:text-accent transition-colors flex items-center gap-2"
+                >
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
+                  {siteConfig.links.phone}
+                </a>
+              </li>
+              <li>
+                <a
+                  href={`mailto:${siteConfig.links.email}`}
+                  className="text-sm hover:text-accent transition-colors flex items-center gap-2"
+                >
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                  {siteConfig.links.email}
+                </a>
+              </li>
+              <li className="text-sm text-neutral-400 pt-2">
+                <p className="font-medium text-neutral-300 mb-1">Business Hours:</p>
+                <p>Mon-Fri: 9am-6pm</p>
+                <p>Sat: 10am-4pm</p>
+                <p>Sun: Closed</p>
+              </li>
             </ul>
           </div>
         </div>

@@ -174,6 +174,88 @@ export default function ContactForm() {
         </select>
       </div>
 
+      {/* Preferred Contact Method */}
+      <div>
+        <label className="block text-sm font-medium text-neutral-700 mb-3">
+          Preferred Contact Method *
+        </label>
+        <div className="flex gap-6">
+          <label className="flex items-center gap-2 cursor-pointer">
+            <input
+              type="radio"
+              value="email"
+              {...register("preferredContactMethod")}
+              disabled={status === "loading"}
+              defaultChecked
+              className="w-4 h-4 text-primary focus:ring-primary focus:ring-2"
+            />
+            <span className="text-neutral-700">Email</span>
+          </label>
+          <label className="flex items-center gap-2 cursor-pointer">
+            <input
+              type="radio"
+              value="phone"
+              {...register("preferredContactMethod")}
+              disabled={status === "loading"}
+              className="w-4 h-4 text-primary focus:ring-primary focus:ring-2"
+            />
+            <span className="text-neutral-700">Phone</span>
+          </label>
+        </div>
+        {errors.preferredContactMethod && (
+          <p className="mt-1 text-sm text-accent flex items-center gap-1">
+            <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
+            </svg>
+            {errors.preferredContactMethod.message}
+          </p>
+        )}
+      </div>
+
+      {/* Best Time to Contact */}
+      <div>
+        <label htmlFor="bestTimeToContact" className="block text-sm font-medium text-neutral-700 mb-2">
+          Best Time to Contact
+        </label>
+        <select
+          id="bestTimeToContact"
+          {...register("bestTimeToContact")}
+          disabled={status === "loading"}
+          className={`w-full px-4 py-3 border border-neutral-300 rounded-lg bg-blue-50 focus:ring-2 focus:ring-primary focus:border-primary transition-all ${
+            status === "loading" ? "opacity-60 cursor-not-allowed" : ""
+          }`}
+        >
+          <option value="">Select a time</option>
+          <option value="morning">Morning (9 AM - 12 PM)</option>
+          <option value="afternoon">Afternoon (12 PM - 5 PM)</option>
+          <option value="evening">Evening (5 PM - 6 PM)</option>
+          <option value="anytime">Anytime</option>
+        </select>
+      </div>
+
+      {/* Estimated Number of Photos */}
+      <div>
+        <label htmlFor="estimatedPhotos" className="block text-sm font-medium text-neutral-700 mb-2">
+          Estimated Number of Photos
+        </label>
+        <select
+          id="estimatedPhotos"
+          {...register("estimatedPhotos")}
+          disabled={status === "loading"}
+          className={`w-full px-4 py-3 border border-neutral-300 rounded-lg bg-blue-50 focus:ring-2 focus:ring-primary focus:border-primary transition-all ${
+            status === "loading" ? "opacity-60 cursor-not-allowed" : ""
+          }`}
+        >
+          <option value="">Select a range</option>
+          <option value="less-100">Less than 100</option>
+          <option value="100-500">100 - 500</option>
+          <option value="500-1000">500 - 1,000</option>
+          <option value="1000-5000">1,000 - 5,000</option>
+          <option value="5000-plus">More than 5,000</option>
+          <option value="not-sure">Not sure</option>
+        </select>
+      </div>
+
       {/* Message Field */}
       <div>
         <label htmlFor="message" className="block text-sm font-medium text-neutral-700 mb-2">

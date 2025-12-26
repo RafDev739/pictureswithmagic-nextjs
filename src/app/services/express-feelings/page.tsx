@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import CTAButton from "@/components/ui/CTAButton";
 
 export const metadata: Metadata = {
   title: "Express Your Feelings | Custom Photo Gifts | Boca Raton FL",
@@ -176,12 +177,7 @@ export default function ExpressFeelingsPage() {
           <p className="text-xl text-neutral-600 mb-8 max-w-2xl mx-auto">
             Create a one-of-a-kind photo gift that speaks from the heart
           </p>
-          <Link
-            href="/contact"
-            className="inline-flex items-center justify-center px-8 py-3 bg-accent text-white rounded-lg hover:bg-accent-dark transition-colors font-medium shadow-lg"
-          >
-            Get Started
-          </Link>
+          <CTAButton variant="primary" size="lg" />
         </div>
       </section>
     </div>

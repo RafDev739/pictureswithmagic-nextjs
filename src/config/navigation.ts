@@ -6,90 +6,70 @@ export interface NavItem {
 
 export const mainNavigation: NavItem[] = [
   {
-    label: 'Home',
-    href: '/',
-  },
-  {
     label: 'Services',
     href: '/services',
     submenu: [
       {
-        label: 'Scan Your Printed Photos',
+        label: 'Photo Scanning',
         href: '/services/scan-photos',
       },
       {
-        label: 'Organize Your Memories',
+        label: 'Photo Organization',
         href: '/services/organize',
       },
       {
-        label: 'Bring Your Memories to Life',
+        label: 'Photo Restoration',
         href: '/services/bring-to-life',
       },
       {
-        label: 'All About Photos',
-        href: '/services/all-about-photos',
-      },
-      {
-        label: 'Express Your Feelings',
-        href: '/services/express-feelings',
-      },
-      {
-        label: 'Our Business Mission',
-        href: '/services/our-mission',
+        label: 'View All Services',
+        href: '/services',
       },
     ],
   },
   {
-    label: 'Photo Galleries',
+    label: 'Before & After',
     href: '/galleries',
     submenu: [
-      {
-        label: 'Alterations Gallery',
-        href: '/galleries/alterations',
-      },
       {
         label: 'Restorations',
         href: '/galleries/restorations',
       },
       {
-        label: 'Photo Organization',
+        label: 'Alterations',
+        href: '/galleries/alterations',
+      },
+      {
+        label: 'Organization',
         href: '/galleries/organization',
       },
       {
-        label: 'Express Your Feelings',
-        href: '/galleries/express-feelings',
-      },
-      {
-        label: 'Photo Albums',
-        href: '/galleries/albums',
+        label: 'View All',
+        href: '/galleries',
       },
     ],
   },
   {
-    label: 'Training & Workshops',
-    href: '/training',
+    label: 'Process',
+    href: '/process',
     submenu: [
       {
-        label: 'Save Your Photos Day',
-        href: '/training/save-photos-day',
+        label: 'How It Works',
+        href: '/process#how-it-works',
       },
       {
-        label: 'Sip & Sort Workshop',
-        href: '/training/sip-and-sort',
+        label: 'Workshops',
+        href: '/training',
+      },
+      {
+        label: 'Resources',
+        href: '/resources',
       },
     ],
   },
   {
-    label: 'Resources',
-    href: '/resources',
-  },
-  {
-    label: 'Testimonials',
+    label: 'Reviews',
     href: '/testimonials',
-  },
-  {
-    label: 'About Us',
-    href: '/about',
   },
   {
     label: 'Contact',
@@ -102,16 +82,13 @@ export const footerNavigation = {
     { label: 'Photo Scanning', href: '/services/scan-photos' },
     { label: 'Photo Organization', href: '/services/organize' },
     { label: 'Photo Restoration', href: '/services/bring-to-life' },
+    { label: 'View All Services', href: '/services' },
   ],
-  company: [
+  quickLinks: [
+    { label: 'Before & After', href: '/galleries' },
+    { label: 'Process', href: '/process' },
+    { label: 'Reviews', href: '/testimonials' },
     { label: 'About Us', href: '/about' },
-    { label: 'Testimonials', href: '/testimonials' },
     { label: 'Contact', href: '/contact' },
-  ],
-  resources: [
-    { label: 'Training', href: '/training' },
-    { label: 'Galleries', href: '/galleries' },
-    { label: 'Resources', href: '/resources' },
-    { label: 'Save Your Photos Day', href: '/training/save-photos-day' },
   ],
 };

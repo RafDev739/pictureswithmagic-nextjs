@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import BeforeAfter from "@/components/ui/BeforeAfter";
+import CTAButton from "@/components/ui/CTAButton";
 
 export const metadata: Metadata = {
   title: "All About Photos | Restoration & Enhancement Services | Boca Raton",
@@ -90,12 +91,7 @@ export default function AllAboutPhotosPage() {
           <p className="text-xl text-neutral-600 mb-8 max-w-2xl mx-auto">
             Let us transform your photos into beautiful memories
           </p>
-          <Link
-            href="/contact"
-            className="inline-flex items-center justify-center px-8 py-3 bg-accent text-white rounded-lg hover:bg-accent-dark transition-colors font-medium shadow-lg"
-          >
-            Contact Us
-          </Link>
+          <CTAButton variant="primary" size="lg" />
         </div>
       </section>
     </div>

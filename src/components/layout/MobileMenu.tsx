@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import { mainNavigation, type NavItem } from '@/config/navigation';
+import CTAButton from '@/components/ui/CTAButton';
 
 interface MobileMenuProps {
   onClose: () => void;
@@ -98,6 +99,11 @@ export default function MobileMenu({ onClose }: MobileMenuProps) {
             )}
           </div>
         ))}
+
+        {/* CTA Button */}
+        <div className="pt-4 mt-4 border-t border-neutral-200">
+          <CTAButton size="lg" className="w-full" />
+        </div>
       </nav>
     </div>
   );

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import PhotoGrid from "@/components/ui/PhotoGrid";
+import CTAButton from "@/components/ui/CTAButton";
 
 export const metadata: Metadata = {
   title: "Organize Your Memories | Photo Organization Services | Florida",
@@ -175,12 +176,7 @@ export default function OrganizePage() {
           <p className="text-xl text-neutral-600 mb-8 max-w-2xl mx-auto">
             Get started with a free assessment today
           </p>
-          <Link
-            href="/contact"
-            className="inline-flex items-center justify-center px-8 py-3 bg-accent text-white rounded-lg hover:bg-accent-dark transition-colors font-medium shadow-lg"
-          >
-            Contact Us
-          </Link>
+          <CTAButton variant="primary" size="lg" />
         </div>
       </section>
     </div>

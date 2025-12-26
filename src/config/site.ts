@@ -29,6 +29,20 @@ export const siteConfig = {
     'Pinellas County',
     'Hillsborough County',
   ],
+  serviceAreaConfig: {
+    primary: 'Serving Palm Beach and Broward Counties',
+    secondary: 'Also serving Pinellas and Hillsborough Counties',
+    fullList: ['Palm Beach County', 'Broward County', 'Pinellas County', 'Hillsborough County'],
+    localPickupDelivery: true,
+    displayInHeader: true,
+    displayInFooter: true,
+  },
+  cta: {
+    primary: 'Book a Free Consultation',
+    secondary: 'Get Started',
+    phone: '(561) 703-9789',
+    email: 'info@pictureswithmagic.com',
+  },
 };
 
 export type SiteConfig = typeof siteConfig;
