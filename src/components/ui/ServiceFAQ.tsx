@@ -26,7 +26,7 @@ export default function ServiceFAQ({
 
   return (
     <div className={className}>
-      <h2 className="text-3xl font-bold text-neutral-900 mb-8 font-heading text-center">
+      <h2 className="text-3xl font-bold text-primary mb-8 font-heading text-center">
         {title}
       </h2>
 

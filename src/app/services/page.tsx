@@ -110,7 +110,7 @@ export default function ServicesPage() {
       {/* CTA */}
       <section className="py-16 md:py-24 bg-neutral-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-4 font-heading">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 font-heading">
             Ready to Get Started?
           </h2>
           <p className="text-xl text-neutral-600 mb-8 max-w-2xl mx-auto">

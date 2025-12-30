@@ -15,7 +15,7 @@ export default function SummaryBlock({
 }: SummaryBlockProps) {
   return (
     <div className={`bg-primary/5 rounded-xl p-8 ${className}`}>
-      <h2 className="text-2xl md:text-3xl font-bold text-neutral-900 mb-4 font-heading">
+      <h2 className="text-2xl md:text-3xl font-bold text-primary mb-4 font-heading">
         {title}
       </h2>
       <p className="text-lg text-neutral-700 mb-6">

@@ -73,7 +73,7 @@ export default function ScanPhotosPage() {
 
   const visualSection = (
     <div className="max-w-5xl mx-auto">
-      <h2 className="text-3xl font-bold text-neutral-900 mb-8 font-heading text-center">
+      <h2 className="text-3xl font-bold text-primary mb-8 font-heading text-center">
         Professional Scanning Equipment
       </h2>
       <div className="grid md:grid-cols-2 gap-6">
@@ -87,7 +87,7 @@ export default function ScanPhotosPage() {
         </div>
         <div className="relative aspect-[4/3] overflow-hidden rounded-lg shadow-md">
           <Image
-            src="/images/4f051043e8e59706.jpg"
+            src="/images/r-collage-hd.png"
             alt="Photo scanning setup with digital display"
             fill
             className="object-cover"

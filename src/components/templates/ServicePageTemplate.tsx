@@ -69,11 +69,6 @@ export default function ServicePageTemplate({
           </div>
 
           <div className="max-w-4xl mx-auto text-center">
-            {/* Service Area Badge */}
-            <div className="flex justify-center mb-6">
-              <ServiceAreaBadge variant="inline" />
-            </div>
-
             <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4 font-heading">
               {serviceName}
             </h1>
@@ -111,7 +106,7 @@ export default function ServicePageTemplate({
         <section className="py-12 md:py-16 bg-white">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-5xl mx-auto">
-              <h2 className="text-3xl font-bold text-neutral-900 mb-8 font-heading text-center">
+              <h2 className="text-3xl font-bold text-primary mb-8 font-heading text-center">
                 What We Offer
               </h2>
               <FeatureList features={features} />
