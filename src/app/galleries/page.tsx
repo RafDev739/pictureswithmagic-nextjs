@@ -54,7 +54,7 @@ export default function GalleriesPage() {
       <section className="bg-gradient-to-br from-primary/10 to-secondary/10 py-16 md:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-4 font-heading">
+            <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4 font-heading">
               Photo Galleries
             </h1>
             <p className="text-xl text-neutral-600">
@@ -111,12 +111,12 @@ export default function GalleriesPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 md:py-24 bg-neutral-50">
+      <section className="py-16 md:py-24 bg-primary">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-4 font-heading">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-heading">
             Ready to Preserve Your Memories?
           </h2>
-          <p className="text-xl text-neutral-600 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-white mb-8 max-w-2xl mx-auto">
             Let us help you create beautiful results like these
           </p>
           <CTAButton variant="primary" size="lg" />

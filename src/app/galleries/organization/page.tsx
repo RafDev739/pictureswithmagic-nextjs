@@ -34,7 +34,7 @@ export default function OrganizationGalleryPage() {
               </svg>
               Back to Galleries
             </Link>
-            <h1 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6 font-heading">
+            <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6 font-heading">
               Photo Organization Gallery
             </h1>
             <p className="text-xl text-neutral-600">
@@ -51,9 +51,9 @@ export default function OrganizationGalleryPage() {
               images={galleryImages}
               altPrefix="Organization example"
             />
-            <div className="mt-16 text-center">
-              <h3 className="text-2xl font-bold text-neutral-900 mb-4">Get Your Photos Organized</h3>
-              <p className="text-neutral-600 mb-8 max-w-2xl mx-auto">
+            <div className="mt-16 text-center bg-primary py-12 px-6 rounded-lg">
+              <h3 className="text-2xl font-bold text-white mb-4">Get Your Photos Organized</h3>
+              <p className="text-white mb-8 max-w-2xl mx-auto">
                 Transform your chaotic photo collection into a beautifully organized digital library.
               </p>
               <Link

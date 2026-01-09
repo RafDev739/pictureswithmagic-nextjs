@@ -34,7 +34,7 @@ export default function AlterationsGalleryPage() {
               </svg>
               Back to Galleries
             </Link>
-            <h1 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6 font-heading">
+            <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6 font-heading">
               Alterations Gallery
             </h1>
             <p className="text-xl text-neutral-600">
@@ -51,18 +51,24 @@ export default function AlterationsGalleryPage() {
               images={galleryImages}
               altPrefix="Alteration example"
             />
-            <div className="mt-16 text-center">
-              <h3 className="text-2xl font-bold text-neutral-900 mb-4">Love What You See?</h3>
-              <p className="text-neutral-600 mb-8 max-w-2xl mx-auto">
-                Let us bring the same magic to your photos. Contact us today to get started.
-              </p>
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center px-8 py-3 bg-accent text-white rounded-lg hover:bg-accent-dark transition-all duration-200 font-medium shadow-lg hover:shadow-xl active:scale-95"
-              >
-                Request This Service
-              </Link>
-            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 md:py-24 bg-primary">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl mx-auto text-center">
+            <h3 className="text-2xl font-bold text-white mb-4">Love What You See?</h3>
+            <p className="text-white mb-8 max-w-2xl mx-auto">
+              Let us bring the same magic to your photos. Contact us today to get started.
+            </p>
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center px-8 py-3 bg-accent text-white rounded-lg hover:bg-accent-dark transition-all duration-200 font-medium shadow-lg hover:shadow-xl active:scale-95"
+            >
+              Request This Service
+            </Link>
           </div>
         </div>
       </section>

@@ -168,12 +168,12 @@ export default function OrganizePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-br from-primary/5 to-secondary/5">
+      <section className="py-16 md:py-24 bg-primary">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-4 font-heading">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-heading">
             Ready to Organize Your Memories?
           </h2>
-          <p className="text-xl text-neutral-600 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-white mb-8 max-w-2xl mx-auto">
             Get started with a free assessment today
           </p>
           <CTAButton variant="primary" size="lg" />

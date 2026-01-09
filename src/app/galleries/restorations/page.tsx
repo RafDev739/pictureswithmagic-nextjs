@@ -74,23 +74,26 @@ export default function RestorationsGalleryPage() {
 
             {/* Large Grid of Restoration Examples */}
             <PhotoGrid images={restorationImages} columns={4} />
+          </div>
+        </div>
+      </section>
 
-            <div className="mt-16 text-center">
-              <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-lg p-8 max-w-3xl mx-auto">
-                <h3 className="text-2xl md:text-3xl font-bold text-neutral-900 mb-4 font-heading">
-                  Restore Your Precious Memories
-                </h3>
-                <p className="text-neutral-700 mb-8 leading-relaxed">
-                  Bring damaged, faded, or torn photos back to life with our professional restoration services. We handle everything from minor touch-ups to complete reconstructions, ensuring your family memories are preserved for generations to come.
-                </p>
-                <Link
-                  href="/contact"
-                  className="inline-flex items-center justify-center px-8 py-3 bg-accent text-white rounded-lg hover:bg-accent-dark transition-all duration-200 font-medium shadow-lg hover:shadow-xl active:scale-95"
-                >
-                  Request Restoration Service
-                </Link>
-              </div>
-            </div>
+      {/* CTA Section */}
+      <section className="py-16 md:py-24 bg-primary">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl mx-auto text-center">
+            <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 font-heading">
+              Restore Your Precious Memories
+            </h3>
+            <p className="text-white mb-8 leading-relaxed">
+              Bring damaged, faded, or torn photos back to life with our professional restoration services. We handle everything from minor touch-ups to complete reconstructions, ensuring your family memories are preserved for generations to come.
+            </p>
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center px-8 py-3 bg-accent text-white rounded-lg hover:bg-accent-dark transition-all duration-200 font-medium shadow-lg hover:shadow-xl active:scale-95"
+            >
+              Request Restoration Service
+            </Link>
           </div>
         </div>
       </section>
