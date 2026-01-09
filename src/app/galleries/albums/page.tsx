@@ -34,35 +34,40 @@ export default function AlbumsGalleryPage() {
               </svg>
               Back to Galleries
             </Link>
-            <h1 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6 font-heading">
+            <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6 font-heading">
               Photo Albums Gallery
             </h1>
-            <p className="text-xl text-neutral-600">
+            <p className="text-xl text-neutral-900">
               Beautiful photo albums and memory books we've created
             </p>
           </div>
         </div>
       </section>
 
-      <section className="py-16 md:py-24">
+      <section className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             <GalleryWithLightbox
               images={galleryImages}
               altPrefix="Photo album example"
             />
-            <div className="mt-16 text-center">
-              <h3 className="text-2xl font-bold text-neutral-900 mb-4">Create Your Custom Album</h3>
-              <p className="text-neutral-600 mb-8 max-w-2xl mx-auto">
-                Design a beautiful memory book that tells your unique story in stunning detail.
-              </p>
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center px-8 py-3 bg-accent text-white rounded-lg hover:bg-accent-dark transition-all duration-200 font-medium shadow-lg hover:shadow-xl active:scale-95"
-              >
-                Order Your Album
-              </Link>
-            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-24 bg-primary">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-2xl mx-auto text-center">
+            <h3 className="text-2xl md:text-3xl font-bold text-white mb-6">Create Your Custom Album</h3>
+            <p className="text-white text-lg mb-8">
+              Design a beautiful memory book that tells your unique story in stunning detail.
+            </p>
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center px-8 py-3 bg-accent text-white rounded-lg hover:bg-accent-dark transition-all duration-200 font-medium shadow-lg hover:shadow-xl active:scale-95"
+            >
+              Order Your Album
+            </Link>
           </div>
         </div>
       </section>
