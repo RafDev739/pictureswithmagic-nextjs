@@ -68,13 +68,13 @@ const tips = [
 export default function ResourcesPage() {
   return (
     <div className="min-h-screen">
-      <section className="bg-gradient-to-br from-primary/10 to-secondary/10 py-16 md:py-24">
+      <section className="bg-white py-16 md:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-4 font-heading">
+            <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4 font-heading">
               Recommended Resources
             </h1>
-            <p className="text-xl text-neutral-600">
+            <p className="text-xl text-neutral-900">
               Professional tools and products we trust for photo preservation
             </p>
           </div>
@@ -98,7 +98,7 @@ export default function ResourcesPage() {
             </div>
 
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-4 font-heading">
+              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 font-heading">
                 Recommended Products & Services
               </h2>
               <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
