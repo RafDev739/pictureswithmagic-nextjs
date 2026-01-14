@@ -42,43 +42,18 @@ export default function Home() {
       {/* Remember when... Section */}
       <section className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-12 text-center font-heading">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-8 text-center font-heading">
             Remember when....
           </h2>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto mb-12">
-            <div className="relative aspect-square overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow">
-              <Image
-                src="/images/cbb2f5d05180c52d.jpg"
-                alt="Nostalgic family memories - gathering around the table"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="relative aspect-square overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow">
-              <Image
-                src="/images/grandma-elvira-hd.png"
-                alt="Things I will never forget about Grandma Elvira"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="relative aspect-square overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow">
-              <Image
-                src="/images/anniversary-hd.png"
-                alt="Anniversary celebration - 63 years of love and memories"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="relative aspect-square overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow">
-              <Image
-                src="/images/c17554ce283757c8.jpg"
-                alt="Nostalgic family memories - silhouettes at sunset"
-                fill
-                className="object-cover"
-              />
-            </div>
+          <div className="max-w-5xl mx-auto mb-12">
+            <Image
+              src="/images/remember-when-collage.png"
+              alt="Family memories - generations together, grandparents with grandchildren, precious moments"
+              width={1200}
+              height={300}
+              className="w-full h-auto rounded-lg"
+            />
           </div>
 
           <div className="text-center max-w-3xl mx-auto">
