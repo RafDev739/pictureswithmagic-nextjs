@@ -86,8 +86,8 @@ export default function Home() {
               <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all transform hover:-translate-y-1">
                 <div className="relative h-48 overflow-hidden">
                   <Image
-                    src="/images/11a4abd9a5d221f4.jpg"
-                    alt="Photo scanning service"
+                    src="/images/photo-scanning-service.jpg"
+                    alt="Photo scanning service - Kodak scanner with photos"
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-300"
                   />
@@ -115,8 +115,8 @@ export default function Home() {
               <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all transform hover:-translate-y-1">
                 <div className="relative h-48 overflow-hidden">
                   <Image
-                    src="/images/photo-organization-collage.jpg"
-                    alt="Photo organization service - Creative photo collages"
+                    src="/images/photo-organization-service.png"
+                    alt="Photo organization service - organized photo boxes and binders"
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-300"
                   />
