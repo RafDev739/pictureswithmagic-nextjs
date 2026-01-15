@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import CTAButton from "@/components/ui/CTAButton";
+import ClickableCarousel from "@/components/ui/ClickableCarousel";
 import HeroSection from "@/components/sections/HeroSection";
 import HowItWorks from "@/components/sections/HowItWorks";
 import TestimonialsPreview from "@/components/sections/TestimonialsPreview";
@@ -42,17 +43,16 @@ export default function Home() {
       {/* Remember when... Section */}
       <section className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-8 text-center font-heading">
-            Remember when....
-          </h2>
-
           <div className="max-w-5xl mx-auto mb-12">
-            <Image
-              src="/images/remember-when-collage.png"
-              alt="Family memories - generations together, grandparents with grandchildren, precious moments"
+            <ClickableCarousel
+              images={[
+                "/images/carousel/happy-memory.png",
+                "/images/carousel/remember-when.png",
+                "/images/carousel/true-value-of-memories.png",
+              ]}
+              alt="Family memories - precious moments"
               width={1200}
               height={300}
-              className="w-full h-auto rounded-lg"
             />
           </div>
 
