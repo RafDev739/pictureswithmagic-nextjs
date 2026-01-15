@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 
 interface ClickableCarouselProps {
@@ -23,6 +23,16 @@ export default function ClickableCarousel({
   const handleClick = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
+
+  useEffect(() => {
+    if (images.length <= 1) return;
+
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, [images.length]);
 
   if (images.length === 0) {
     return null;
