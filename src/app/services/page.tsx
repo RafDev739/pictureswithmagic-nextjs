@@ -43,7 +43,7 @@ const services = [
     title: "Our Business Mission",
     href: "/services/our-mission",
     description: "Learn about our commitment to preserving your precious memories with care, quality, and dedication.",
-    image: "/images/caccb1d7750c460f.jpg",
+    image: "/images/business-mission.png",
   },
 ];
 
