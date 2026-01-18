@@ -79,7 +79,7 @@ export default function ScanPhotosPage() {
       <div className="grid md:grid-cols-2 gap-6">
         <div className="relative aspect-[4/3] overflow-hidden rounded-lg shadow-md">
           <Image
-            src="/images/11a4abd9a5d221f4.jpg"
+            src="/images/scanning-equipment.jpg"
             alt="Professional photo scanning equipment"
             fill
             className="object-cover"
@@ -87,8 +87,8 @@ export default function ScanPhotosPage() {
         </div>
         <div className="relative aspect-[4/3] overflow-hidden rounded-lg shadow-md">
           <Image
-            src="/images/r-collage-hd.png"
-            alt="Photo scanning setup with digital display"
+            src="/images/ready-to-organize.jpg"
+            alt="Scanned photos organized and ready to share"
             fill
             className="object-cover"
           />
