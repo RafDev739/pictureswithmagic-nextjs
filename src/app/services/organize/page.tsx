@@ -12,14 +12,14 @@ export const metadata: Metadata = {
 
 export default function OrganizePage() {
   const disorganizedPhotos = [
-    { src: "/images/cbb2f5d05180c52d.jpg", alt: "Disorganized photos in a box" },
-    { src: "/images/11a4abd9a5d221f4.jpg", alt: "Scattered loose photos" },
-    { src: "/images/4f051043e8e59706.jpg", alt: "Old photo albums needing organization" },
-    { src: "/images/c17554ce283757c8.jpg", alt: "Mixed collection of family photos" },
-    { src: "/images/ef84239f16ac3ebd.jpg", alt: "Photos stored in envelopes" },
-    { src: "/images/fb2057f01490e8f8.jpg", alt: "Unsorted vintage photographs" },
-    { src: "/images/4980820c0fe49684.jpg", alt: "Boxes of unorganized photos" },
-    { src: "/images/11a4abd9a5d221f4.jpg", alt: "Photo collection needing sorting" },
+    { src: "/images/typical-collection.jpg", alt: "Typical photo collection with albums and binders" },
+    { src: "/images/typical-collection-2.jpg", alt: "Collection of slides, film reels, and photo albums" },
+    { src: "/images/photos-in-box.jpg", alt: "Photos stored in decorative box" },
+    { src: "/images/magnetic-album.jpg", alt: "Open magnetic photo album with family photos" },
+    { src: "/images/preparing-to-scan.png", alt: "Photos with white gloves ready for scanning" },
+    { src: "/images/organized-storage.png", alt: "Organized photo storage boxes with labels" },
+    { src: "/images/labeled-boxes.png", alt: "Labeled photo storage boxes" },
+    { src: "/images/organized-result.jpg", alt: "Organized photo collection with albums, boxes, and digital backup" },
   ];
 
   return (
