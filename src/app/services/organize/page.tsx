@@ -141,16 +141,16 @@ export default function OrganizePage() {
               <div className="grid md:grid-cols-2 gap-6 mb-8">
                 <div className="relative aspect-[4/3] overflow-hidden rounded-lg shadow-md border border-neutral-200">
                   <Image
-                    src="/images/4980820c0fe49684.jpg"
-                    alt="Organized photo storage boxes with labels"
+                    src="/images/scattered-photos-collection.png"
+                    alt="Scattered photos and box of photos needing organization"
                     fill
                     className="object-cover"
                   />
                 </div>
                 <div className="relative aspect-[4/3] overflow-hidden rounded-lg shadow-md border border-neutral-200">
                   <Image
-                    src="/images/fb2057f01490e8f8.jpg"
-                    alt="Neatly organized photo storage system"
+                    src="/images/organized-photos-result.png"
+                    alt="Organized photo storage, scanning equipment, and albums"
                     fill
                     className="object-cover"
                   />
