@@ -28,7 +28,7 @@ export default function PhotoBookCarousel() {
   }, []);
 
   return (
-    <div className="relative aspect-square overflow-hidden rounded-lg shadow-lg">
+    <div className="relative aspect-[16/9] overflow-hidden rounded-lg shadow-lg">
       {carouselImages.map((src, index) => (
         <div
           key={src}
@@ -40,7 +40,7 @@ export default function PhotoBookCarousel() {
             src={src}
             alt={`Photo book sample ${index + 1}`}
             fill
-            className="object-cover"
+            className="object-cover brightness-150"
             priority={index === 0}
           />
         </div>
