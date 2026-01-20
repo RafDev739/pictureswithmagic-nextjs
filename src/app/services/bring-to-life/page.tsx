@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import CTAButton from "@/components/ui/CTAButton";
+import PhotoBookCarousel from "@/components/PhotoBookCarousel";
 
 export const metadata: Metadata = {
   title: "Bring Your Memories to Life | Photo Books & Slideshows | Boca Raton",
@@ -102,14 +103,7 @@ export default function BringToLifePage() {
                   </ul>
                 </div>
 
-                <div className="relative aspect-square overflow-hidden rounded-lg shadow-lg">
-                  <Image
-                    src="/images/11a4abd9a5d221f4.jpg"
-                    alt="Custom photo book pages showing family memories and stories"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
+                <PhotoBookCarousel />
               </div>
 
               <div className="text-center">
