@@ -15,21 +15,21 @@ const galleries = [
     href: "/galleries/alterations",
     description: "See examples of photo enhancements and creative alterations",
     count: "25+ photos",
-    image: "/images/ef84239f16ac3ebd.jpg",
+    image: "/images/alterations-bride.png",
   },
   {
     title: "Restorations",
     href: "/galleries/restorations",
     description: "Before and after examples of our photo restoration work",
     count: "30+ photos",
-    image: "/images/fb2057f01490e8f8.jpg",
+    image: "/images/restorations-girl.png",
   },
   {
     title: "Photo Organization",
     href: "/galleries/organization",
     description: "Examples of organized photo collections and digital albums",
     count: "20+ photos",
-    image: "/images/4980820c0fe49684.jpg",
+    image: "/images/organization-boxes.png",
   },
   {
     title: "Express Your Feelings",
@@ -43,7 +43,7 @@ const galleries = [
     href: "/galleries/albums",
     description: "Beautiful photo albums and memory books we've created",
     count: "18+ photos",
-    image: "/images/11a4abd9a5d221f4.jpg",
+    image: "/images/albums-grandma.jpg",
   },
 ];
 

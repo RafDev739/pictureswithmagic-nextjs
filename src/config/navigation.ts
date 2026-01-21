@@ -28,7 +28,7 @@ export const mainNavigation: NavItem[] = [
     ],
   },
   {
-    label: 'Before & After',
+    label: 'Photo Galleries',
     href: '/galleries',
     submenu: [
       {
@@ -85,7 +85,7 @@ export const footerNavigation = {
     { label: 'View All Services', href: '/services' },
   ],
   quickLinks: [
-    { label: 'Before & After', href: '/galleries' },
+    { label: 'Photo Galleries', href: '/galleries' },
     { label: 'Process', href: '/process' },
     { label: 'Reviews', href: '/testimonials' },
     { label: 'About Us', href: '/about' },
