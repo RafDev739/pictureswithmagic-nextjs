@@ -8,18 +8,14 @@ export const metadata: Metadata = {
 };
 
 const galleryImages = [
-  "/images/4980820c0fe49684.jpg",
-  "/images/4f051043e8e59706.jpg",
-  "/images/c17554ce283757c8.jpg",
-  "/images/6aec02dc4a3c88d2.jpg",
-  "/images/42a3109d57fec1f2.jpg",
-  "/images/ca2b2729adde7257.jpg",
-  "/images/cb74ef0d0db9411c.jpg",
-  "/images/d22ae141cc63c7b8.jpg",
-  "/images/d4827fb137096578.jpg",
-  "/images/d9427918fd154657.jpg",
-  "/images/e205e8bbc15b3d97.jpg",
-  "/images/e9d5e3b57541e44a.jpg",
+  "/images/organize-memories-1.jpg",
+  "/images/organize-memories-2.jpg",
+  "/images/lots-of-photos-3.jpg",
+  "/images/lots-of-photos-4.jpg",
+  "/images/gallery-1-scanning.png",
+  "/images/gallery-2-archival-box.jpg",
+  "/images/gallery-3-scanning.jpg",
+  "/images/gallery-4-organize.jpg",
 ];
 
 export default function OrganizationGalleryPage() {
