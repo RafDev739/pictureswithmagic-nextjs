@@ -1,8 +1,8 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
-import { siteConfig } from '@/config/site';
 import Navigation from './Navigation';
 import MobileMenu from './MobileMenu';
 import CTAButton from '@/components/ui/CTAButton';
@@ -27,11 +27,16 @@ export default function Header() {
             {/* Logo */}
             <Link
               href="/"
-              className="flex items-center space-x-2 hover:opacity-80 transition-opacity flex-shrink-0"
+              className="flex items-center hover:opacity-80 transition-opacity flex-shrink-0"
             >
-              <div className="text-2xl font-bold text-primary">
-                {siteConfig.name}
-              </div>
+              <Image
+                src="/images/logo.png"
+                alt="Pictures With Magic"
+                width={280}
+                height={84}
+                className="h-20 w-auto"
+                priority
+              />
             </Link>
 
             {/* Desktop: Navigation + CTA */}

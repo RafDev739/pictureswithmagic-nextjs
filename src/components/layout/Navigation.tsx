@@ -28,7 +28,7 @@ export default function Navigation() {
             aria-current={isActive(item.href) ? 'page' : undefined}
             aria-expanded={item.submenu ? activeDropdown === item.label : undefined}
             className={`
-              px-4 py-2 rounded-md text-sm font-medium transition-all duration-200
+              px-4 py-2 rounded-md text-xl font-medium transition-all duration-200
               focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2
               ${
                 isActive(item.href)
