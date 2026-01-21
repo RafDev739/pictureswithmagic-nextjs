@@ -8,18 +8,14 @@ export const metadata: Metadata = {
 };
 
 const galleryImages = [
-  "/images/ef84239f16ac3ebd.jpg",
-  "/images/05ca31da4cb15797.jpg",
-  "/images/093aa11193678559.jpg",
-  "/images/0cb688cb9101f1bd.jpg",
-  "/images/0f1cc06c5baa7f70.jpg",
-  "/images/11a4abd9a5d221f4.jpg",
-  "/images/138041f2d6a85b3a.jpg",
-  "/images/15fef50843bdc4bf.jpg",
-  "/images/19890b6f4403a137.jpg",
-  "/images/1af605093477c185.jpg",
-  "/images/1faf41ddac931b7e.jpg",
-  "/images/21a41479fe509866.jpg",
+  "/images/1 BrideColor-Orig.JPG",
+  "/images/2 BridedB&W&FlowersColor-V2.jpg",
+  "/images/3 ConVaso-aOrig.jpg",
+  "/images/4 ConVaso-Editada.jpg",
+  "/images/1 aPommelHorse-Orig.jpg",
+  "/images/2 Gemini_Generated_Image_ywocfgywocfgywoc.png",
+  "/images/3 Grupo-4-Original.jpg",
+  "/images/4 Grupo-4-Menos2.jpg",
 ];
 
 export default function AlterationsGalleryPage() {
