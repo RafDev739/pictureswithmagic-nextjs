@@ -8,18 +8,10 @@ export const metadata: Metadata = {
 };
 
 const galleryImages = [
-  "/images/cbb2f5d05180c52d.jpg",
-  "/images/ca937fc62a1a5848.jpg",
-  "/images/cbdc932bc49f5ed3.jpg",
-  "/images/cbe0a89fa8d80e4b.jpg",
-  "/images/d17a6d821a12d1fd.jpg",
-  "/images/d21bccacb6a61f78.jpg",
-  "/images/d2de2f01f797b608.jpg",
-  "/images/d49e852ae8424268.jpg",
-  "/images/d53dd54d148466d5.jpg",
-  "/images/dc8dc2ce4e61b905.jpg",
-  "/images/e57ff8fd8d83bccb.jpg",
-  "/images/eef04410a0330685.jpg",
+  "/images/express-feelings-1.jpg",
+  "/images/express-feelings-2.jpg",
+  "/images/express-feelings-3.jpg",
+  "/images/express-feelings-4.jpg",
 ];
 
 export default function ExpressFeelingsGalleryPage() {
