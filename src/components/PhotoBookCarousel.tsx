@@ -4,16 +4,18 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 
 const carouselImages = [
-  "/images/carousel/photobook-2.jpg",
-  "/images/carousel/photobook-6.jpg",
-  "/images/carousel/photobook-7.jpg",
-  "/images/carousel/photobook-10.jpg",
-  "/images/carousel/photobook-12.jpg",
-  "/images/carousel/photobook-14.jpg",
-  "/images/carousel/photobook-15.jpg",
-  "/images/carousel/photobook-16.jpg",
-  "/images/carousel/photobook-17.jpg",
-  "/images/carousel/photobook-18.jpg",
+  "/images/carousel/1 Carmen Teresa 90.jpeg",
+  "/images/carousel/1 Darian.jpeg",
+  "/images/carousel/1 Historia de Familia ParadisiIMG_7012.jpeg",
+  "/images/carousel/1 La Mesa Redonda.jpeg",
+  "/images/carousel/2 Darian 15.jpeg",
+  "/images/carousel/2 Jordan.jpeg",
+  "/images/carousel/2 Miagros in Family Album.jpeg",
+  "/images/carousel/2 Paradisis.jpeg",
+  "/images/carousel/3 Andrea Wedding 1.jpeg",
+  "/images/carousel/3 Derrick.jpeg",
+  "/images/carousel/3 Nicolas 15 years.jpeg",
+  "/images/carousel/3 Paradisis.jpeg",
 ];
 
 export default function PhotoBookCarousel() {
