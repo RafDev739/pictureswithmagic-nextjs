@@ -44,6 +44,14 @@ export const mainNavigation: NavItem[] = [
         href: '/galleries/organization',
       },
       {
+        label: 'Express Your Feelings',
+        href: '/galleries/express-feelings',
+      },
+      {
+        label: 'Photo Albums',
+        href: '/galleries/albums',
+      },
+      {
         label: 'View All',
         href: '/galleries',
       },

@@ -16,12 +16,14 @@ interface GalleryWithLightboxProps {
   images: string[] | GalleryImage[];
   altPrefix?: string;
   columns?: 2 | 3 | 4;
+  aspectRatio?: 'square' | 'video';
 }
 
 export default function GalleryWithLightbox({
   images,
   altPrefix = "Gallery image",
-  columns = 4
+  columns = 4,
+  aspectRatio = 'square'
 }: GalleryWithLightboxProps) {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -51,7 +53,7 @@ export default function GalleryWithLightbox({
           <div
             key={i}
             onClick={() => handleImageClick(i)}
-            className="group relative aspect-square overflow-hidden rounded-lg shadow-md hover:shadow-2xl transition-all cursor-pointer"
+            className={`group relative ${aspectRatio === 'video' ? 'aspect-video' : 'aspect-square'} overflow-hidden rounded-lg shadow-md hover:shadow-2xl transition-all cursor-pointer`}
           >
             <Image
               src={image.src}

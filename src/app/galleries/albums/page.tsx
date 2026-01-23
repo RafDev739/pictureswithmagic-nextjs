@@ -8,18 +8,18 @@ export const metadata: Metadata = {
 };
 
 const galleryImages = [
-  "/images/11a4abd9a5d221f4.jpg",
-  "/images/cbb2f5d05180c52d.jpg",
-  "/images/d24206e8ce644665.jpg",
-  "/images/d4c2a2b7eaef83cd.jpg",
-  "/images/d5e28bdf65cb55ff.jpg",
-  "/images/dbbf275f4cf8dd54.jpg",
-  "/images/dec7bf18bada78ad.jpg",
-  "/images/e45175ff4907d814.jpg",
-  "/images/e5f1a0adc40eeb5c.jpg",
-  "/images/eae49419730fc36f.jpg",
-  "/images/ed10267ab7c19b28.jpg",
-  "/images/f0bd0e4dfdb2f0f7.jpg",
+  "/images/1 Carmen Teresa 90.jpeg",
+  "/images/2 Jordan.jpeg",
+  "/images/3 Andrea Wedding 1.jpeg",
+  "/images/1 Historia de Familia ParadisiIMG_7012.jpeg",
+  "/images/2 Miagros in Family Album.jpeg",
+  "/images/3 Nicolas 15 years.jpeg",
+  "/images/1 La Mesa Redonda.jpeg",
+  "/images/2 Darian 15.jpeg",
+  "/images/3 Paradisis.jpeg",
+  "/images/1 Darian.jpeg",
+  "/images/2 Paradisis.jpeg",
+  "/images/3 Derrick.jpeg",
 ];
 
 export default function AlbumsGalleryPage() {
@@ -50,6 +50,8 @@ export default function AlbumsGalleryPage() {
             <GalleryWithLightbox
               images={galleryImages}
               altPrefix="Photo album example"
+              columns={3}
+              aspectRatio="video"
             />
           </div>
         </div>
