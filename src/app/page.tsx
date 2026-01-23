@@ -144,7 +144,7 @@ export default function Home() {
               <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all transform hover:-translate-y-1">
                 <div className="relative h-48 overflow-hidden">
                   <Image
-                    src="/images/c17554ce283757c8.jpg"
+                    src="/images/photo-restoration-before-after.png"
                     alt="Photo restoration service"
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-300"
