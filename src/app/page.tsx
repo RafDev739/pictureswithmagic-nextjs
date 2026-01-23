@@ -31,11 +31,11 @@ export default function Home() {
       {/* Hero Section */}
       <HeroSection />
 
-      {/* Don't let your memories slip away */}
+      {/* Mission statement */}
       <section className="py-6 bg-primary/5 border-y border-primary/20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-xl md:text-2xl font-semibold text-primary italic">
-            Don't let your memories slip away.
+            My passion is telling stories through photographs and narrative, preserving history in photo albums you can hold
           </p>
         </div>
       </section>

@@ -1,14 +1,37 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
 import CTAButton from "@/components/ui/CTAButton";
 import PhotoBookCarousel from "@/components/PhotoBookCarousel";
+import PhotoGrid from "@/components/ui/PhotoGrid";
 
 export const metadata: Metadata = {
   title: "Bring Your Memories to Life | Photo Books & Slideshows | Boca Raton",
   description: "Create beautiful photo books and custom slideshows with music. Transform your digital photos into tangible keepsakes and memorable presentations.",
   keywords: ["photo books", "custom slideshows", "photo albums", "memory books", "photo presentations", "Boca Raton"],
 };
+
+const restorationImages = [
+  { src: "/images/euginis-before.jpg", alt: "Euginis portrait - before restoration" },
+  { src: "/images/euginis-after.jpg", alt: "Euginis portrait - after restoration" },
+  { src: "/images/familia-before.jpg", alt: "Family photo - before restoration" },
+  { src: "/images/familia-after.jpg", alt: "Family photo - after restoration" },
+  { src: "/images/miliandycpb-before.jpg", alt: "MiliAndy portrait - before restoration" },
+  { src: "/images/miliandycpb-after.jpg", alt: "MiliAndy portrait - after restoration" },
+  { src: "/images/nina-before.jpg", alt: "Girl photo - before restoration" },
+  { src: "/images/nina-after.jpg", alt: "Girl photo - after restoration" },
+  { src: "/images/enbw-before.jpg", alt: "Black and white photo - before restoration" },
+  { src: "/images/enbw-after.jpg", alt: "Black and white photo - after restoration" },
+  { src: "/images/papa-violin-before.jpg", alt: "Papa with violin - before restoration" },
+  { src: "/images/papa-violin-after.jpg", alt: "Papa with violin - after restoration" },
+  { src: "/images/img0009-before.jpg", alt: "Portrait - before restoration" },
+  { src: "/images/img0009-after.jpg", alt: "Portrait - after restoration" },
+  { src: "/images/tita-radio-before.jpg", alt: "Tita Radio Capital - before restoration" },
+  { src: "/images/tita-radio-after.jpg", alt: "Tita Radio Capital - after restoration" },
+  { src: "/images/nieve-before.jpg", alt: "Comiendo Nieve - before restoration" },
+  { src: "/images/nieve-after.jpg", alt: "Comiendo Nieve - after restoration" },
+  { src: "/images/photo1-before.jpg", alt: "Photo 1 - before restoration" },
+  { src: "/images/photo1-after.jpg", alt: "Photo 1 - after restoration" },
+];
 
 export default function BringToLifePage() {
   return (
@@ -29,18 +52,11 @@ export default function BringToLifePage() {
         </div>
       </section>
 
-      {/* Hero Image */}
+      {/* Restoration Examples Grid */}
       <section className="py-8 md:py-12 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto">
-            <div className="relative aspect-[16/9] overflow-hidden rounded-xl shadow-xl border-8 border-white ring-4 ring-primary/20">
-              <Image
-                src="/images/c17554ce283757c8.jpg"
-                alt="Beautiful custom photo book showcasing cherished family memories"
-                fill
-                className="object-cover"
-              />
-            </div>
+          <div className="max-w-7xl mx-auto">
+            <PhotoGrid images={restorationImages} columns={4} />
           </div>
         </div>
       </section>
