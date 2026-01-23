@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import CTAButton from '@/components/ui/CTAButton';
 import ValuePropCard from '@/components/ui/ValuePropCard';
 import TrustBadge from '@/components/ui/TrustBadge';
@@ -7,6 +8,18 @@ export default function HeroSection() {
     <section className="relative py-16 md:py-24 lg:py-32 overflow-hidden bg-gradient-to-br from-background-sky to-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
+          {/* Banner Image */}
+          <div className="flex justify-center mb-10">
+            <Image
+              src="/images/pictures-with-magic-banner.png"
+              alt="Pictures with Magic - Photo scanning, organization, and album creation"
+              width={800}
+              height={400}
+              className="w-full max-w-3xl h-auto"
+              priority
+            />
+          </div>
+
           {/* Main Content */}
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6 font-heading leading-tight">
