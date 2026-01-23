@@ -23,7 +23,7 @@ export default function BringToLifePage() {
               Back to Services
             </Link>
             <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6 font-heading">
-              Bring Your Memories to Life
+              Photo Restoration
             </h1>
           </div>
         </div>

@@ -23,7 +23,7 @@ export const mainNavigation: NavItem[] = [
       },
       {
         label: 'View All Services',
-        href: '/services',
+        href: '/services/all',
       },
     ],
   },
@@ -90,7 +90,7 @@ export const footerNavigation = {
     { label: 'Photo Scanning', href: '/services/scan-photos' },
     { label: 'Photo Organization', href: '/services/organize' },
     { label: 'Photo Restoration', href: '/services/bring-to-life' },
-    { label: 'View All Services', href: '/services' },
+    { label: 'View All Services', href: '/services/all' },
   ],
   quickLinks: [
     { label: 'Photo Galleries', href: '/galleries' },
