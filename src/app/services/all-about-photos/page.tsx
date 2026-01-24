@@ -2,12 +2,36 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import BeforeAfter from "@/components/ui/BeforeAfter";
 import CTAButton from "@/components/ui/CTAButton";
+import PhotoGrid from "@/components/ui/PhotoGrid";
 
 export const metadata: Metadata = {
   title: "All About Photos | Restoration & Enhancement Services | Boca Raton",
   description: "Comprehensive photo restoration services including photo repair, object removal, and cosmetic digital surgery. Transform damaged or outdated photos into beautiful memories.",
   keywords: ["photo restoration", "photo repair", "photo enhancement", "object removal", "digital surgery", "Boca Raton"],
 };
+
+const restorationImages = [
+  { src: "/images/euginis-before.jpg", alt: "Euginis portrait - before restoration" },
+  { src: "/images/euginis-after.jpg", alt: "Euginis portrait - after restoration" },
+  { src: "/images/familia-before.jpg", alt: "Family photo - before restoration" },
+  { src: "/images/familia-after.jpg", alt: "Family photo - after restoration" },
+  { src: "/images/miliandycpb-before.jpg", alt: "MiliAndy portrait - before restoration" },
+  { src: "/images/miliandycpb-after.jpg", alt: "MiliAndy portrait - after restoration" },
+  { src: "/images/nina-before.jpg", alt: "Girl photo - before restoration" },
+  { src: "/images/nina-after.jpg", alt: "Girl photo - after restoration" },
+  { src: "/images/enbw-before.jpg", alt: "Black and white photo - before restoration" },
+  { src: "/images/enbw-after.jpg", alt: "Black and white photo - after restoration" },
+  { src: "/images/papa-violin-before.jpg", alt: "Papa with violin - before restoration" },
+  { src: "/images/papa-violin-after.jpg", alt: "Papa with violin - after restoration" },
+  { src: "/images/img0009-before.jpg", alt: "Portrait - before restoration" },
+  { src: "/images/img0009-after.jpg", alt: "Portrait - after restoration" },
+  { src: "/images/tita-radio-before.jpg", alt: "Tita Radio Capital - before restoration" },
+  { src: "/images/tita-radio-after.jpg", alt: "Tita Radio Capital - after restoration" },
+  { src: "/images/nieve-before.jpg", alt: "Comiendo Nieve - before restoration" },
+  { src: "/images/nieve-after.jpg", alt: "Comiendo Nieve - after restoration" },
+  { src: "/images/photo1-before.jpg", alt: "Photo 1 - before restoration" },
+  { src: "/images/photo1-after.jpg", alt: "Photo 1 - after restoration" },
+];
 
 export default function AllAboutPhotosPage() {
   return (
@@ -28,27 +52,24 @@ export default function AllAboutPhotosPage() {
         </div>
       </section>
 
+      {/* Photo Restoration Section */}
+      <section className="py-8 md:py-12 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 font-heading">
+              Photo Restoration
+            </h2>
+            <p className="text-lg text-neutral-600 mb-8 max-w-3xl">
+              Those old photos stored in boxes, with all those memories. As part of our photo restoration service, we can make those old photos look as good as new, and as part of our scanning services, we bring them to the digital world for you to share with your family.
+            </p>
+            <PhotoGrid images={restorationImages} columns={4} />
+          </div>
+        </div>
+      </section>
+
       <section className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-5xl mx-auto">
-            {/* As Good As New */}
-            <BeforeAfter
-              title="As Good As New"
-              description="Those old photos stored in boxes, with all those memories. As part of our photo restoration service, we can make those old photos look as good as new, and as part of our scanning services, we bring them to the digital world for you to share with your family."
-              beforeImage="/images/fb2057f01490e8f8.jpg"
-              afterImage="/images/ef84239f16ac3ebd.jpg"
-              beforeAlt="Before restoration: faded vintage family photograph from the 1950s"
-              afterAlt="After restoration: beautifully restored and enhanced family photograph"
-            />
-
-            <div className="text-center mb-16">
-              <Link
-                href="/galleries/restorations"
-                className="text-primary hover:text-primary-dark font-semibold underline text-lg"
-              >
-                Photo Gallery
-              </Link>
-            </div>
 
             {/* All About Me */}
             <BeforeAfter
