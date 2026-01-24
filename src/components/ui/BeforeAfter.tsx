@@ -19,11 +19,11 @@ export default function BeforeAfter({
 }: BeforeAfterProps) {
   return (
     <div className="mb-12">
-      <h3 className="text-2xl md:text-3xl font-bold text-neutral-900 mb-4 font-heading">
+      <h3 className="text-3xl md:text-4xl font-bold text-primary mb-4 font-heading">
         {title}
       </h3>
       {description && (
-        <p className="text-lg text-neutral-600 mb-6 max-w-3xl">
+        <p className="text-xl md:text-2xl text-neutral-600 mb-6 max-w-5xl">
           {description}
         </p>
       )}

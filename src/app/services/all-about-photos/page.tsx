@@ -59,7 +59,7 @@ export default function AllAboutPhotosPage() {
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 font-heading">
               Photo Restoration
             </h2>
-            <p className="text-lg text-neutral-600 mb-8 max-w-3xl">
+            <p className="text-xl md:text-2xl text-neutral-600 mb-8 max-w-5xl">
               Those old photos stored in boxes, with all those memories. As part of our photo restoration service, we can make those old photos look as good as new, and as part of our scanning services, we bring them to the digital world for you to share with your family.
             </p>
             <PhotoGrid images={restorationImages} columns={4} />
@@ -69,7 +69,7 @@ export default function AllAboutPhotosPage() {
 
       <section className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-5xl mx-auto">
+          <div className="max-w-7xl mx-auto">
 
             {/* All About Me */}
             <BeforeAfter
