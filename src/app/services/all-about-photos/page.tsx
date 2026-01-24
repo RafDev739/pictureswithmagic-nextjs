@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import BeforeAfter from "@/components/ui/BeforeAfter";
+import Carousel from "@/components/ui/Carousel";
 import CTAButton from "@/components/ui/CTAButton";
 import PhotoGrid from "@/components/ui/PhotoGrid";
 
@@ -72,14 +73,22 @@ export default function AllAboutPhotosPage() {
           <div className="max-w-7xl mx-auto">
 
             {/* All About Me */}
-            <BeforeAfter
-              title="All About Me"
-              description="There is always that photo where you wish you could take away some persons / objects from the photo. As part of our photo montage services, we can make people and objects disappear."
-              beforeImage="/images/cbb2f5d05180c52d.jpg"
-              afterImage="/images/11a4abd9a5d221f4.jpg"
-              beforeAlt="Before editing: photo with unwanted objects or people"
-              afterAlt="After editing: clean photo with objects removed"
-            />
+            <div className="mb-12">
+              <h3 className="text-3xl md:text-4xl font-bold text-primary mb-4 font-heading">
+                All About Me
+              </h3>
+              <p className="text-xl md:text-2xl text-neutral-600 mb-6 max-w-5xl">
+                There is always that photo where you wish you could take away some persons / objects from the photo. As part of our photo montage services, we can make people and objects disappear.
+              </p>
+              <Carousel
+                images={[
+                  { src: "/images/carousel-1.png", alt: "Photo montage example 1" },
+                  { src: "/images/carousel-2.png", alt: "Photo montage example 2" },
+                  { src: "/images/carousel-3.png", alt: "Photo montage example 3" },
+                ]}
+                interval={4000}
+              />
+            </div>
 
             <div className="text-center mb-16">
               <Link
