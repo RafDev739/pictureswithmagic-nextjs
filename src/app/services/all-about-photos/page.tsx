@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import BeforeAfter from "@/components/ui/BeforeAfter";
 import Carousel from "@/components/ui/Carousel";
 import CTAButton from "@/components/ui/CTAButton";
 import PhotoGrid from "@/components/ui/PhotoGrid";
@@ -100,14 +99,22 @@ export default function AllAboutPhotosPage() {
             </div>
 
             {/* Cosmetic Digital Surgery */}
-            <BeforeAfter
-              title="Cosmetic Digital Surgery"
-              description="You want your photo to look the best. We make sure of that. As part of our photo restoration services, we can apply cosmetic surgery to your photo to take away wrinkles and blemishes."
-              beforeImage="/images/4f051043e8e59706.jpg"
-              afterImage="/images/c17554ce283757c8.jpg"
-              beforeAlt="Before cosmetic enhancement: portrait with visible wrinkles and blemishes"
-              afterAlt="After cosmetic enhancement: smoothed and enhanced portrait"
-            />
+            <div className="mb-12">
+              <h3 className="text-3xl md:text-4xl font-bold text-primary mb-4 font-heading">
+                Cosmetic Digital Surgery
+              </h3>
+              <p className="text-xl md:text-2xl text-neutral-600 mb-6 max-w-5xl">
+                You want your photo to look the best. We make sure of that. As part of our photo restoration services, we can apply cosmetic surgery to your photo to take away wrinkles and blemishes.
+              </p>
+              <Carousel
+                images={[
+                  { src: "/images/carousel-cosmetic-1.png", alt: "Cosmetic digital surgery example 1" },
+                  { src: "/images/carousel-cosmetic-2.png", alt: "Cosmetic digital surgery example 2" },
+                  { src: "/images/carousel-cosmetic-3.png", alt: "Cosmetic digital surgery example 3" },
+                ]}
+                interval={4000}
+              />
+            </div>
           </div>
         </div>
       </section>
