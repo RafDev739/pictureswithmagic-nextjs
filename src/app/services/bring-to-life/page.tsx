@@ -2,36 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import CTAButton from "@/components/ui/CTAButton";
 import PhotoBookCarousel from "@/components/PhotoBookCarousel";
-import PhotoGrid from "@/components/ui/PhotoGrid";
+import Carousel from "@/components/ui/Carousel";
 
 export const metadata: Metadata = {
   title: "Bring Your Memories to Life | Photo Books & Slideshows | Boca Raton",
   description: "Create beautiful photo books and custom slideshows with music. Transform your digital photos into tangible keepsakes and memorable presentations.",
   keywords: ["photo books", "custom slideshows", "photo albums", "memory books", "photo presentations", "Boca Raton"],
 };
-
-const restorationImages = [
-  { src: "/images/euginis-before.jpg", alt: "Euginis portrait - before restoration" },
-  { src: "/images/euginis-after.jpg", alt: "Euginis portrait - after restoration" },
-  { src: "/images/familia-before.jpg", alt: "Family photo - before restoration" },
-  { src: "/images/familia-after.jpg", alt: "Family photo - after restoration" },
-  { src: "/images/miliandycpb-before.jpg", alt: "MiliAndy portrait - before restoration" },
-  { src: "/images/miliandycpb-after.jpg", alt: "MiliAndy portrait - after restoration" },
-  { src: "/images/nina-before.jpg", alt: "Girl photo - before restoration" },
-  { src: "/images/nina-after.jpg", alt: "Girl photo - after restoration" },
-  { src: "/images/enbw-before.jpg", alt: "Black and white photo - before restoration" },
-  { src: "/images/enbw-after.jpg", alt: "Black and white photo - after restoration" },
-  { src: "/images/papa-violin-before.jpg", alt: "Papa with violin - before restoration" },
-  { src: "/images/papa-violin-after.jpg", alt: "Papa with violin - after restoration" },
-  { src: "/images/img0009-before.jpg", alt: "Portrait - before restoration" },
-  { src: "/images/img0009-after.jpg", alt: "Portrait - after restoration" },
-  { src: "/images/tita-radio-before.jpg", alt: "Tita Radio Capital - before restoration" },
-  { src: "/images/tita-radio-after.jpg", alt: "Tita Radio Capital - after restoration" },
-  { src: "/images/nieve-before.jpg", alt: "Comiendo Nieve - before restoration" },
-  { src: "/images/nieve-after.jpg", alt: "Comiendo Nieve - after restoration" },
-  { src: "/images/photo1-before.jpg", alt: "Photo 1 - before restoration" },
-  { src: "/images/photo1-after.jpg", alt: "Photo 1 - after restoration" },
-];
 
 export default function BringToLifePage() {
   return (
@@ -46,29 +23,36 @@ export default function BringToLifePage() {
               Back to Services
             </Link>
             <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6 font-heading">
-              Photo Restoration
+              Bring Your Memories to Life
             </h1>
           </div>
         </div>
       </section>
 
-      {/* Restoration Examples Grid */}
+      {/* Restoration Examples Carousel */}
       <section className="py-8 md:py-12 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-7xl mx-auto">
-            <PhotoGrid images={restorationImages} columns={4} />
+          <div className="max-w-4xl mx-auto">
+            <Carousel
+              images={[
+                { src: "/images/carousel/carousel-restoration-1.png", alt: "Photo restoration example 1" },
+                { src: "/images/carousel/carousel-restoration-2.png", alt: "Photo restoration example 2" },
+                { src: "/images/carousel/carousel-restoration-3.png", alt: "Photo restoration example 3" },
+              ]}
+              interval={4000}
+            />
           </div>
         </div>
       </section>
 
-      <section className="py-16 md:py-24 bg-white">
+      <section className="pt-4 pb-16 md:pt-6 md:pb-24 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
-            <p className="text-lg text-neutral-700 mb-12 leading-relaxed">
+            <p className="text-xl text-neutral-700 mb-12 leading-relaxed">
               We live in a very dynamic and demanding world that is always pushing family members in different directions. There are only few occasions during the year ( Christmas, Mother's Day, Father's Day ) that bring our family together. Those few occasions are the ones that create memories. Maybe it was a family gathering, maybe your son's birthday party, maybe your son's graduation, it may be your anniversary, or it may be even be memories from when you were young... Wouldn't it be nice to have those special memories available to you when you need them?
             </p>
 
-            <p className="text-lg text-neutral-700 mb-16 leading-relaxed">
+            <p className="text-xl text-neutral-700 mb-16 leading-relaxed">
               We can bring your memories to life in the form of a Photo Book, or as a slideshow. In addition, we provide our Tell Your Story service in which we work with you to combine your memories as part of the photos in the Photo Book or in the Slideshow.
             </p>
 
