@@ -48,11 +48,11 @@ export default function BringToLifePage() {
       <section className="pt-4 pb-16 md:pt-6 md:pb-24 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
-            <p className="text-xl text-neutral-700 mb-12 leading-relaxed">
+            <p className="text-xl md:text-2xl text-neutral-700 mb-12 leading-relaxed">
               We live in a very dynamic and demanding world that is always pushing family members in different directions. There are only few occasions during the year ( Christmas, Mother's Day, Father's Day ) that bring our family together. Those few occasions are the ones that create memories. Maybe it was a family gathering, maybe your son's birthday party, maybe your son's graduation, it may be your anniversary, or it may be even be memories from when you were young... Wouldn't it be nice to have those special memories available to you when you need them?
             </p>
 
-            <p className="text-xl text-neutral-700 mb-16 leading-relaxed">
+            <p className="text-xl md:text-2xl text-neutral-700 mb-16 leading-relaxed">
               We can bring your memories to life in the form of a Photo Book, or as a slideshow. In addition, we provide our Tell Your Story service in which we work with you to combine your memories as part of the photos in the Photo Book or in the Slideshow.
             </p>
 
@@ -72,7 +72,7 @@ export default function BringToLifePage() {
                 <h3 className="text-2xl font-semibold text-neutral-900 mb-4">
                   Do you want to share and remember?
                 </h3>
-                <p className="text-lg text-neutral-700 mb-6">
+                <p className="text-xl md:text-2xl text-neutral-700 mb-6">
                   Select your special photos.<br />
                   Let us create a beautiful Photo Book for you.
                 </p>
@@ -80,7 +80,7 @@ export default function BringToLifePage() {
                 <h3 className="text-2xl font-semibold text-neutral-900 mb-4">
                   Different options available:
                 </h3>
-                <ul className="space-y-2 text-lg text-neutral-700">
+                <ul className="space-y-2 text-lg md:text-xl text-neutral-700">
                   <li className="flex items-start">
                     <svg className="w-5 h-5 text-accent mr-2 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
@@ -111,7 +111,7 @@ export default function BringToLifePage() {
               <div className="text-center">
                 <Link
                   href="/galleries/albums"
-                  className="text-primary hover:text-primary-dark font-semibold underline text-lg"
+                  className="text-primary hover:text-primary-dark font-semibold underline text-lg md:text-xl"
                 >
                   Photo Gallery
                 </Link>
@@ -119,23 +119,35 @@ export default function BringToLifePage() {
             </div>
 
             {/* Slideshow Section */}
-            <div className="mb-12">
+            <div className="mt-8 mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-primary mb-8 font-heading">
                 Slideshow
               </h2>
 
-              <p className="text-lg text-neutral-700 mb-6 leading-relaxed">
+              {/* Video Player */}
+              <div className="mb-8">
+                <video
+                  className="w-full rounded-lg shadow-lg"
+                  controls
+                  poster="/videos/fun-day-at-the-beach-poster.jpg"
+                >
+                  <source src="/videos/fun-day-at-the-beach-sample.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+
+              <p className="text-xl md:text-2xl text-neutral-700 mb-6 leading-relaxed">
                 Do you have a special celebration?<br />
                 Select some especial photos and<br />
                 Let us create for you a beautiful
               </p>
 
-              <p className="text-2xl font-bold text-accent mb-8">
+              <p className="text-3xl md:text-4xl font-bold text-accent mb-8">
                 slideshow with transitions and music.
               </p>
 
               <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-lg p-8">
-                <ul className="space-y-3 text-neutral-700">
+                <ul className="space-y-3 text-lg md:text-xl text-neutral-700">
                   <li className="flex items-start">
                     <svg className="w-6 h-6 text-accent mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
@@ -161,7 +173,7 @@ export default function BringToLifePage() {
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-heading">
             Ready to Bring Your Memories to Life?
           </h2>
-          <p className="text-xl text-white mb-8 max-w-2xl mx-auto">
+          <p className="text-xl md:text-2xl text-white mb-8 max-w-2xl mx-auto">
             Create beautiful photo books or slideshows today
           </p>
           <CTAButton variant="primary" size="lg" />

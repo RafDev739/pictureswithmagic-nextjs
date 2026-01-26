@@ -18,8 +18,12 @@ export const mainNavigation: NavItem[] = [
         href: '/services/organize',
       },
       {
-        label: 'Photo Restoration',
+        label: 'Bring Your Memories to Life',
         href: '/services/bring-to-life',
+      },
+      {
+        label: 'All About Photos',
+        href: '/services/all-about-photos',
       },
       {
         label: 'View All Services',
@@ -89,7 +93,8 @@ export const footerNavigation = {
   services: [
     { label: 'Photo Scanning', href: '/services/scan-photos' },
     { label: 'Photo Organization', href: '/services/organize' },
-    { label: 'Photo Restoration', href: '/services/bring-to-life' },
+    { label: 'Bring Your Memories to Life', href: '/services/bring-to-life' },
+    { label: 'All About Photos', href: '/services/all-about-photos' },
     { label: 'View All Services', href: '/services/all' },
   ],
   quickLinks: [
