@@ -80,7 +80,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Service 1 */}
             <Link href="/services/scan-photos" className="group">
               <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all transform hover:-translate-y-1">
@@ -144,8 +144,8 @@ export default function Home() {
               <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all transform hover:-translate-y-1">
                 <div className="relative h-48 overflow-hidden">
                   <Image
-                    src="/images/photo-restoration-before-after.png"
-                    alt="Photo restoration service"
+                    src="/images/photo-book-family-history.jpeg"
+                    alt="Photo books and slideshows service"
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-300"
                   />
@@ -153,10 +153,39 @@ export default function Home() {
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-semibold text-neutral-900 mb-2 group-hover:text-primary transition-colors">
-                    Photo Restoration
+                    Bring Your Memories to Life
                   </h3>
                   <p className="text-neutral-600 mb-4">
-                    Restore damaged or faded photos to their original beauty
+                    Photo books and video slideshows to share your story
+                  </p>
+                  <span className="text-primary hover:text-primary-dark font-medium inline-flex items-center">
+                    Learn More
+                    <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Service 4 */}
+            <Link href="/services/all-about-photos" className="group">
+              <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all transform hover:-translate-y-1">
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src="/images/carousel-1.png"
+                    alt="All About Photos service - photo montage and enhancement"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold text-neutral-900 mb-2 group-hover:text-primary transition-colors">
+                    All About Photos
+                  </h3>
+                  <p className="text-neutral-600 mb-4">
+                    Photo restoration, montage, and digital enhancement
                   </p>
                   <span className="text-primary hover:text-primary-dark font-medium inline-flex items-center">
                     Learn More
