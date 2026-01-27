@@ -11,7 +11,7 @@ export default function HowItWorks() {
             How It Works
           </h2>
           <p className="text-xl md:text-2xl text-primary font-medium max-w-2xl mx-auto">
-            Our simple 3-step process makes preserving your memories easy and stress-free
+            Our simple 3-step process to get started
           </p>
         </div>
 
@@ -24,8 +24,8 @@ export default function HowItWorks() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
               </svg>
             }
-            title="Schedule Your Free Consultation"
-            description="Contact us to discuss your project. We'll answer your questions and provide a personalized quote with no obligation."
+            title="Complimentary Phone Call"
+            description="Contact us to discuss your project. We'll answer your questions and learn about your photo preservation needs."
           />
 
           <ProcessStep
@@ -35,8 +35,8 @@ export default function HowItWorks() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
               </svg>
             }
-            title="We Preserve Your Memories"
-            description="Our certified photo manager carefully scans, organizes, or restores your photos. Local pickup and delivery available in Palm Beach and Broward Counties."
+            title="Discovery Session"
+            description="I have a discovery session with you to make an inventory of the material and have a better idea of the size of the collection and types of media in it."
           />
 
           <ProcessStep
@@ -46,8 +46,8 @@ export default function HowItWorks() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             }
-            title="Enjoy & Share Your Memories"
-            description="Receive your organized digital collection or custom photo album. Your memories are now preserved for future generations to enjoy."
+            title="Plan & Approval"
+            description="After the discovery session, I prepare a detailed plan and send it to you for approval before we begin preserving your memories."
           />
         </div>
 
