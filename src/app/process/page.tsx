@@ -25,142 +25,177 @@ export default function ProcessPage() {
         </div>
       </section>
 
-      {/* How It Works - 3 Steps */}
+      {/* How It Works - 3 Services × 3 Steps Each */}
       <section id="how-it-works" className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center text-primary mb-12 font-heading">
+            <h2 className="text-3xl md:text-4xl font-bold text-center text-primary mb-8 font-heading">
               Simple, Professional, and Personalized
             </h2>
 
-            {/* Step 1 */}
+            {/* Intro Paragraph */}
+            <p className="text-lg text-neutral-600 mb-16 text-center max-w-3xl mx-auto">
+              After our initial complimentary phone call, I have a discovery session with you to make an inventory of the material and have a better idea of the size of the collection and types of media in it. After the discovery session, I prepare a plan and send it to you for approval.
+            </p>
+
+            {/* Section 1: Printed Photos */}
             <div className="mb-16">
-              <div className="flex flex-col md:flex-row items-start gap-8">
-                <div className="flex-shrink-0">
-                  <div className="w-20 h-20 bg-accent rounded-full flex items-center justify-center">
-                    <span className="text-3xl font-bold text-white">1</span>
-                  </div>
-                </div>
-                <div className="flex-1">
+              <div className="flex items-center gap-3 mb-8">
+                <span className="text-4xl">📷</span>
+                <h3 className="text-2xl md:text-3xl font-bold text-neutral-900">
+                  Printed Photos
+                </h3>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {/* Step 1: Organize */}
+                <div className="bg-accent/5 rounded-xl p-6 border-l-4 border-accent">
                   <div className="flex items-center gap-3 mb-4">
-                    <svg className="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                    </svg>
-                    <h3 className="text-2xl font-semibold text-neutral-900">
-                      Schedule Your Free Consultation
-                    </h3>
+                    <div className="w-10 h-10 bg-accent rounded-full flex items-center justify-center flex-shrink-0">
+                      <span className="text-lg font-bold text-white">1</span>
+                    </div>
+                    <span className="text-2xl">📋</span>
+                    <h4 className="text-lg font-semibold text-neutral-900">Organize</h4>
                   </div>
-                  <p className="text-lg text-neutral-600 mb-4">
-                    Contact us to discuss your project. We'll learn about your goals, assess your collection, and provide a custom quote. No obligation, no pressure - just helpful guidance from a Certified Photo Manager.
+                  <p className="text-lg text-neutral-600">
+                    Work together to decide how you'd like your photos organized. I work in sessions of 3-4 hours each to organize your photos, dismount albums, unframe photos, and sort by date, event, or person until the organizing phase is complete.
                   </p>
-                  <ul className="space-y-2 text-neutral-700">
-                    <li className="flex items-start gap-2">
-                      <svg className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                      <span>Free assessment of your photo collection</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <svg className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                      <span>Custom quote tailored to your needs</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <svg className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                      <span>Clear timeline and expectations</span>
-                    </li>
-                  </ul>
+                </div>
+
+                {/* Step 2: Digitize */}
+                <div className="bg-accent/5 rounded-xl p-6 border-l-4 border-accent">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 bg-accent rounded-full flex items-center justify-center flex-shrink-0">
+                      <span className="text-lg font-bold text-white">2</span>
+                    </div>
+                    <span className="text-2xl">🖨️</span>
+                    <h4 className="text-lg font-semibold text-neutral-900">Digitize</h4>
+                  </div>
+                  <p className="text-lg text-neutral-600">
+                    Together we select which photos will be scanned. Professional high-resolution scanning preserves every detail. Photos are organized digitally in folders following the agreed order, with consistent naming conventions. The price of scanning is separate from the sessions.
+                  </p>
+                </div>
+
+                {/* Step 3: Store */}
+                <div className="bg-accent/5 rounded-xl p-6 border-l-4 border-accent">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 bg-accent rounded-full flex items-center justify-center flex-shrink-0">
+                      <span className="text-lg font-bold text-white">3</span>
+                    </div>
+                    <span className="text-2xl">📦</span>
+                    <h4 className="text-lg font-semibold text-neutral-900">Store</h4>
+                  </div>
+                  <p className="text-lg text-neutral-600">
+                    Physical photos are carefully placed into acid-free archival boxes for long-term preservation. Digital copies are saved to an External Hard Drive. The size of archival boxes and EHD depends on your collection size. (Archival boxes and EHD are priced separately.)
+                  </p>
                 </div>
               </div>
             </div>
 
-            {/* Step 2 */}
+            {/* Section 2: Digital Photos */}
             <div className="mb-16">
-              <div className="flex flex-col md:flex-row items-start gap-8">
-                <div className="flex-shrink-0">
-                  <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center">
-                    <span className="text-3xl font-bold text-white">2</span>
-                  </div>
-                </div>
-                <div className="flex-1">
+              <div className="flex items-center gap-3 mb-8">
+                <span className="text-4xl">💻</span>
+                <h3 className="text-2xl md:text-3xl font-bold text-neutral-900">
+                  Digital Photos
+                </h3>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {/* Step 1: Plan */}
+                <div className="bg-primary/5 rounded-xl p-6 border-l-4 border-primary">
                   <div className="flex items-center gap-3 mb-4">
-                    <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                    </svg>
-                    <h3 className="text-2xl font-semibold text-neutral-900">
-                      We Preserve Your Memories
-                    </h3>
+                    <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                      <span className="text-lg font-bold text-white">1</span>
+                    </div>
+                    <span className="text-2xl">📝</span>
+                    <h4 className="text-lg font-semibold text-neutral-900">Plan</h4>
                   </div>
-                  <p className="text-lg text-neutral-600 mb-4">
-                    Your photos never leave our careful hands. We scan, organize, or restore your photos using professional-grade equipment and proven methodologies. Local pickup and delivery available in Palm Beach and Broward Counties.
+                  <p className="text-lg text-neutral-600">
+                    I prepare a detailed plan and scope of the project based on the tasks involved. Together we review and decide on the plan of action tailored to your digital photo collection needs.
                   </p>
-                  <ul className="space-y-2 text-neutral-700">
-                    <li className="flex items-start gap-2">
-                      <svg className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                      <span>Professional 600 DPI scanning</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <svg className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                      <span>Safe handling with archival gloves</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <svg className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                      <span>Regular progress updates</span>
-                    </li>
-                  </ul>
+                </div>
+
+                {/* Step 2: Organize */}
+                <div className="bg-primary/5 rounded-xl p-6 border-l-4 border-primary">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                      <span className="text-lg font-bold text-white">2</span>
+                    </div>
+                    <span className="text-2xl">🔄</span>
+                    <h4 className="text-lg font-semibold text-neutral-900">Organize</h4>
+                  </div>
+                  <p className="text-lg text-neutral-600">
+                    Working in sessions, I perform tasks such as: culling (removing duplicates and unwanted photos), de-duplication, organizing into logical folder structures, and adding metadata or tags for easy searching.
+                  </p>
+                </div>
+
+                {/* Step 3: Back Up */}
+                <div className="bg-primary/5 rounded-xl p-6 border-l-4 border-primary">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                      <span className="text-lg font-bold text-white">3</span>
+                    </div>
+                    <span className="text-2xl">💾</span>
+                    <h4 className="text-lg font-semibold text-neutral-900">Back Up</h4>
+                  </div>
+                  <p className="text-lg text-neutral-600">
+                    Your organized digital collection is securely backed up. Files are delivered on an External Hard Drive or cloud storage of your choice. I provide guidance on maintaining a reliable backup strategy (3-2-1 rule: 3 copies, 2 different media types, 1 offsite).
+                  </p>
                 </div>
               </div>
             </div>
 
-            {/* Step 3 */}
+            {/* Section 3: Photo Albums */}
             <div className="mb-12">
-              <div className="flex flex-col md:flex-row items-start gap-8">
-                <div className="flex-shrink-0">
-                  <div className="w-20 h-20 bg-secondary rounded-full flex items-center justify-center">
-                    <span className="text-3xl font-bold text-white">3</span>
-                  </div>
-                </div>
-                <div className="flex-1">
+              <div className="flex items-center gap-3 mb-8">
+                <span className="text-4xl">📚</span>
+                <h3 className="text-2xl md:text-3xl font-bold text-neutral-900">
+                  Photo Albums
+                </h3>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {/* Step 1: Design */}
+                <div className="bg-secondary/5 rounded-xl p-6 border-l-4 border-secondary">
                   <div className="flex items-center gap-3 mb-4">
-                    <svg className="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                    </svg>
-                    <h3 className="text-2xl font-semibold text-neutral-900">
-                      Enjoy & Share Your Memories
-                    </h3>
+                    <div className="w-10 h-10 bg-secondary rounded-full flex items-center justify-center flex-shrink-0">
+                      <span className="text-lg font-bold text-white">1</span>
+                    </div>
+                    <span className="text-2xl">🎨</span>
+                    <h4 className="text-lg font-semibold text-neutral-900">Design</h4>
                   </div>
-                  <p className="text-lg text-neutral-600 mb-4">
-                    Receive your beautifully organized digital collection or custom photo album. Your memories are ready to share with family, display proudly, or preserve for future generations.
+                  <p className="text-lg text-neutral-600">
+                    We work together to decide the theme, size, and style of your photo book. You select the photos to include. I help curate the best images and suggest layouts that tell your story beautifully.
                   </p>
-                  <ul className="space-y-2 text-neutral-700">
-                    <li className="flex items-start gap-2">
-                      <svg className="w-5 h-5 text-secondary mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                      <span>High-resolution digital files on USB drive</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <svg className="w-5 h-5 text-secondary mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                      <span>Organized folders with clear naming</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <svg className="w-5 h-5 text-secondary mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                      <span>Backup copies for safekeeping</span>
-                    </li>
-                  </ul>
+                </div>
+
+                {/* Step 2: Review */}
+                <div className="bg-secondary/5 rounded-xl p-6 border-l-4 border-secondary">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 bg-secondary rounded-full flex items-center justify-center flex-shrink-0">
+                      <span className="text-lg font-bold text-white">2</span>
+                    </div>
+                    <span className="text-2xl">✏️</span>
+                    <h4 className="text-lg font-semibold text-neutral-900">Review</h4>
+                  </div>
+                  <p className="text-lg text-neutral-600">
+                    Continuous reviews are made with you throughout the design process. Necessary adjustments are incorporated. If modifications result in a change to the approved project scope, there may be an additional charge.
+                  </p>
+                </div>
+
+                {/* Step 3: Deliver */}
+                <div className="bg-secondary/5 rounded-xl p-6 border-l-4 border-secondary">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 bg-secondary rounded-full flex items-center justify-center flex-shrink-0">
+                      <span className="text-lg font-bold text-white">3</span>
+                    </div>
+                    <span className="text-2xl">🎁</span>
+                    <h4 className="text-lg font-semibold text-neutral-900">Deliver</h4>
+                  </div>
+                  <p className="text-lg text-neutral-600">
+                    Once approved, the album is sent to the printing company selected with you. The price of printing depends on the printer chosen and does not depend on Pictures With Magic. Your finished album is delivered ready to enjoy and share.
+                  </p>
                 </div>
               </div>
             </div>
