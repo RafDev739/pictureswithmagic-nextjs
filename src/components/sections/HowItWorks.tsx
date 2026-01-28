@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import ProcessStep from '@/components/ui/ProcessStep';
 import CTAButton from '@/components/ui/CTAButton';
 
@@ -49,6 +50,22 @@ export default function HowItWorks() {
             title="Plan & Approval"
             description="After the discovery session, I prepare a detailed plan and send it to you for approval before we begin preserving your memories."
           />
+        </div>
+
+        {/* Link to Process Page */}
+        <div className="text-center mb-8">
+          <p className="text-xl text-neutral-600 mb-2">
+            Want to understand our process better? See the detailed steps for each service type.
+          </p>
+          <Link
+            href="/process#how-it-works"
+            className="text-lg text-primary hover:text-primary-dark font-medium inline-flex items-center"
+          >
+            Learn more about our process
+            <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </Link>
         </div>
 
         {/* CTA */}
