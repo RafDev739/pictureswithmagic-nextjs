@@ -30,8 +30,8 @@ export const siteConfig = {
     'Hillsborough County',
   ],
   serviceAreaConfig: {
-    primary: 'Serving Palm Beach and Broward Counties',
-    secondary: 'Also serving Pinellas and Hillsborough Counties',
+    primary: 'Serving Pinellas and Hillsborough Counties',
+    secondary: 'Also serving Palm Beach and Broward Counties',
     fullList: ['Palm Beach County', 'Broward County', 'Pinellas County', 'Hillsborough County'],
     localPickupDelivery: true,
     displayInHeader: true,

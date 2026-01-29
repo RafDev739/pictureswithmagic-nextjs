@@ -4,7 +4,7 @@ import ServicePageTemplate from "@/components/templates/ServicePageTemplate";
 
 export const metadata: Metadata = {
   title: "Photo Scanning Services | 600 DPI Digital Conversion | Boca Raton",
-  description: "Professional 600 DPI photo scanning services. Convert printed photos, slides, and negatives to high-quality digital images. Local pickup & delivery in Palm Beach and Broward counties.",
+  description: "Professional 600 DPI photo scanning services. Convert printed photos, slides, and negatives to high-quality digital images. Local pickup & delivery in Pinellas and Hillsborough counties.",
   keywords: ["photo scanning", "600 DPI scanning", "digital conversion", "photo digitization", "slides scanning", "negatives scanning", "Boca Raton"],
 };
 
@@ -26,7 +26,7 @@ export default function ScanPhotosPage() {
         </svg>
       ),
       title: "Local Pickup & Delivery",
-      description: "No need to mail your irreplaceable photos. We offer convenient pickup and delivery in Palm Beach and Broward Counties.",
+      description: "No need to mail your irreplaceable photos. We offer convenient pickup and delivery in Pinellas and Hillsborough Counties.",
     },
     {
       icon: (

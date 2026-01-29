@@ -7,7 +7,7 @@ export interface FAQ {
 export const trustFAQs: FAQ[] = [
   {
     question: "How do you handle my precious photos?",
-    answer: "We treat your photos with the utmost care and respect. All photos are handled in a secure environment, logged, and tracked throughout the entire process. We use professional equipment and follow strict protocols to ensure your memories are safe. Local pickup and delivery are available in Palm Beach and Broward Counties to minimize handling.",
+    answer: "We treat your photos with the utmost care and respect. All photos are handled in a secure environment, logged, and tracked throughout the entire process. We use professional equipment and follow strict protocols to ensure your memories are safe. Local pickup and delivery are available in Pinellas and Hillsborough Counties to minimize handling.",
     category: "trust",
   },
   {
