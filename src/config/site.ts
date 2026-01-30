@@ -4,7 +4,7 @@ export const siteConfig = {
   url: process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000',
   ogImage: '/images/og-image.jpg',
   links: {
-    email: 'info@pictureswithmagic.com',
+    email: 'raf2177act@gmail.com',
     phone: '(561) 703-9789',
     facebook: 'https://facebook.com/pictureswithmagic',
     instagram: 'https://instagram.com/pictureswithmagic',
@@ -41,7 +41,7 @@ export const siteConfig = {
     primary: 'Book a Free Consultation',
     secondary: 'Get Started',
     phone: '(561) 703-9789',
-    email: 'info@pictureswithmagic.com',
+    email: 'raf2177act@gmail.com',
   },
 };
 

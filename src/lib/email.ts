@@ -13,7 +13,7 @@ export async function sendEmail({
   to,
   subject,
   html,
-  from = "Pictures With Magic <noreply@pictureswithmagic.com>",
+  from = "Pictures With Magic <onboarding@resend.dev>",
 }: EmailOptions) {
   try {
     const { data, error } = await resend.emails.send({
